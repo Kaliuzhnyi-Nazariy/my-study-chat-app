@@ -12,6 +12,7 @@ dotenv.config();
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);
+app.use("/api/message", authRoutes);
 
 app.listen(PORT, () => {
   connectToMongoDB();
